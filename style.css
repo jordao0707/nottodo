@@ -1,0 +1,12 @@
+.content {
+    width: 70%;
+    margin: auto;
+}
+
+.categ {
+    margin: 0;
+}
+
+input[type='radio']:checked {
+    background-color: black;
+}
