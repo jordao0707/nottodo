@@ -19,43 +19,45 @@
         <h1>
             Nottodo <i class="material-icons" style="font-size: 1.8rem;">check_circle</i>
         </h1>
-
-        <h2 class="categ">Hoje</h2><br>
-        <ul class="list-group list-group-flush" id="ulHoje">
-        </ul>
-        <hr class="mt-2 mb-3" />
-
-        <h2 class="categ">Amanhã</h2><br>
-        <ul class="list-group list-group-flush" id="ulAmanha">
-        </ul>
-        <hr class="mt-2 mb-3" />
-
-        <h2 class="categ">Algum dia</h2><br>
-        <ul class="list-group list-group-flush" id="ulAlgumDia">
-        </ul>
-        <hr class="mt-2 mb-3" />
-
+<!-- Notas -->
+            <h2 class="categ">Hoje</h2><br>
+            <ul class="list-group list-group-flush" id="ul-Hoje">
+            </ul>
+            <hr class="mt-2 mb-3" />
+     
+            <h2 class="categ">Amanhã</h2><br>
+            <ul class="list-group list-group-flush" id="ul-Aman">
+            </ul>
+            <hr class="mt-2 mb-3" />
+            
+            <h2 class="categ">Algum dia</h2><br>
+            <ul class="list-group list-group-flush" id="ul-AlgDia">
+            </ul>
+            <hr class="mt-2 mb-3" />
+     
+<!-- Form -->
         <div class="container fixed-bottom pb-4 pt-4 bg-white">
             <div class="row align-items-center">
                 <div class="col-7">
                     <input type="text" class="form-control col-6" placeholder="Descrição da Anotação" id="descNote">
                 </div>
                 <div class="col-4">
+                    
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="radioHoje" name="categRadio" value="option1">
-                        <label class="form-check-label" for="radioHoje">Hoje</label>
+                        <input class="form-check-input" type="radio" id="radio-Hoje" name="categRadio" value="option1">
+                        <label class="form-check-label" for="radio-Hoje">Hoje</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="radioAman" name="categRadio" value="option2">
-                        <label class="form-check-label" for="radioAman">Amanhã</label>
+                        <input class="form-check-input" type="radio" id="radio-Aman" name="categRadio" value="option2">
+                        <label class="form-check-label" for="radio-Aman">Amanhã</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" id="radioAlgDia" name="categRadio" value="option3">
-                        <label class="form-check-label" for="radioAlgDia">Algum dia</label>
+                        <input class="form-check-input" type="radio" id="radio-AlgDia" name="categRadio" value="option3">
+                        <label class="form-check-label" for="radio-AlgDia">Algum dia</label>
                     </div>
                 </div>
                 <div class="col-1">
-                    <button type="button" class="btn btn-outline-dark" onclick="add()">Adicionar</button>
+                    <button type="button" class="btn btn-outline-dark" id = "sub" onclick="add()">Adicionar</button>
                 </div>
             </div>
         </div>
